@@ -1,2 +1,3 @@
 *.swp
-
+bin/
+y.tab.c
