@@ -1,6 +1,7 @@
-code = <<END
 def complex_formula(a, b, *args, c)
   a + b + args.size + c
 end
-END
-puts RubyVM::InstructionSequence.compile(code).disasm
+
+puts complex_formula(1,2,3)
+puts complex_formula(1,2,3,4)
+puts complex_formula(1,2,3,4,5)
